@@ -13,6 +13,10 @@ ul {
 }
  
 /* header */
+#header {
+    width: 100%;
+}
+
 .header-info {
     width: 100%;
     padding: 0 86px;
