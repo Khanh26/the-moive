@@ -1,4 +1,11 @@
 @media (max-width: 739px) {
+    #header {
+        position: fixed;
+        z-index: 99999999;
+        height: 86.31px;
+    }
+
+
     .rp-1 {
         flex: none;
         width: 100%!important;
@@ -15,6 +22,7 @@
     /* header */
     .header-info {
         padding: 10px!important;
+        background-color: white;
     }
 
     .header-main,.block-header {
@@ -72,6 +80,9 @@
     }
 
     /* content */
+    #content {
+        padding-top: 86.31px;
+    }
     .heading-content {
         font-size: 16px;
     }
