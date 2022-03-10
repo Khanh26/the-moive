@@ -18,6 +18,10 @@ ul {
     padding: 0 86px;
 }
 
+.btn-mb {
+    display: none;
+}
+
 .block-header {
     width: 100%;
     align-items: center;
@@ -73,13 +77,17 @@ ul {
 
 .header-main {
     background-color: black;
-    padding: 0 86px;    
+    padding: 0 86px;
 }
 
 .nav-item  {
     text-align: center;
     padding: 4px;
     position:relative;
+}
+
+.nav-item.searchBar{
+    display: none;
 }
 
 .nav-item:hover > a {

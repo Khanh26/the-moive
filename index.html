@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>RAP1HK - Đặt vé xem phim</title>
 </head>
 <body>
     <div class="wapper">
         <div id="header">
             <nav class="header-info">
-                <div class="block-header row">
-                    <div class="col-4 block-logo p-0 text-start">
-                        <a href=""><img src="./assets/img/logo.png" width="56%"></a>
+                <div class="row block-header">
+                    <div class="col-4 block-logo rp-2 p-0 text-start">
+                        <a href="" class="link-logo"><img src="./assets/img/logo.png" class="logo" width="56%"></a>
                     </div>
-                    <div class="col-4 block-search p-0 text-center">
+                    <div class="col-4 block-search rp-d-none p-0 text-center">
                         <form class="formSearch" action="">
                             <div class="blockInput row">
                                 <input type="text" class="col-9 inputSearch" placeholder="Tìm kiếm phim, bài viết..." name="Search" id="inputSearch">
@@ -28,19 +29,30 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-4 login p-0 text-end">
+                    <div class="col-4 login p-0 rp-2 text-end">
                         <i class="fas fa-user"></i>
                         <a href="" class="btnLogin ml-3">Đăng nhập</a>
                         <span>/</span>
-                        <a href="" class="btnLogin">Đăng ký</a>
+                        <a href="" class="btnLogin ">Đăng ký</a>
                     </div>
                 </div>
             </nav>
             <nav class="header-main">
+
+                <button class="btn-mb"><i class="fas fa-bars"></i></button>
+
                 <ul class="row block-header">
-                    <li class="nav-item nav-item-start col"><a href="" class="nav-link">PHIM</a></li>
-                    <li class="nav-item col"><a href="" class="nav-link">GIỚI THIỆU</a></li>
-                    <li class="nav-item col">
+                    <li class="nav-item nav-item-start col searchBar rp-d-block rp-1">
+                        <form class="formSearch" action="">
+                            <div class="blockInput row">
+                                <input type="text" class="col-9 inputSearch" placeholder="Tìm kiếm phim, bài viết..." name="Search" id="inputSearch">
+                                <button type="submit" class="col-3 btnSearch" class=""><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="nav-item nav-item-start col rp-1"><a href="" class="nav-link">PHIM</a></li>
+                    <li class="nav-item col rp-1"><a href="" class="nav-link">GIỚI THIỆU</a></li>
+                    <li class="nav-item col rp-1">
                         <a href="" class="nav-link">TIN TỨC <i class="fas fa-caret-down"></i></a>
                         
                         <ul class="subMenu">
@@ -49,7 +61,7 @@
                             <li class="item-subMenu"><a href="" class="link-subMenu">KHUYẾN MÃI</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item col">
+                    <li class="nav-item col rp-1">
                         <a href="" class="nav-link">RẠP/GIÁ VÉ <i class="fas fa-caret-down"></i></a>
             
                         <ul class="subMenu">
@@ -57,8 +69,8 @@
                             <li class="item-subMenu"><a href="" class="link-subMenu">GIÁ VÉ</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item col"><a href="" class="nav-link">THÀNH VIÊN</a></li>
-                    <li class="nav-item col"><a href="" class="nav-link">LIÊN HỆ</a></li>
+                    <li class="nav-item col rp-1"><a href="" class="nav-link">THÀNH VIÊN</a></li>
+                    <li class="nav-item col rp-1"><a href="" class="nav-link">LIÊN HỆ</a></li>
                 </ul>
             </nav>
         </div>
@@ -84,9 +96,9 @@
                         <button class="heading-content pending">PHIM SẮP CHIẾU</button>
                     </div>
                     <div class="list-movie row">
-                        <div class="col-4 item-movie position-relative">
+                        <div class="col-4 item-movie rp-1 position-relative">
                             <img src="./assets/img/poster/chiakhoatramty.jpg" class="poster-movie" alt="">
-                            <div class="name-movie">
+                            <div class="name-movie rp-1">
                                 <p>Chìa khóa trăm tỷ</p>
                             </div>
                             <div class="btnAction">
@@ -97,9 +109,9 @@
                                 <p class="p-object">12+</p>
                             </div>
                         </div>
-                        <div class="col-4 item-movie position-relative">
+                        <div class="col-4 item-movie rp-1 position-relative">
                             <img src="./assets/img/poster/dautruongamnhac.jpg" class="poster-movie" alt="">
-                            <div class="name-movie">
+                            <div class="name-movie rp-1">
                                 <p>Đấu trường âm nhạc</p>
                             </div>
                             <div class="btnAction">
@@ -110,9 +122,9 @@
                                 <p class="p-object">12+</p>
                             </div>
                         </div>
-                        <div class="col-4 item-movie position-relative" >
+                        <div class="col-4 item-movie rp-1 position-relative" >
                             <img src="./assets/img/poster/paw.jpg" class="poster-movie" alt="">
-                            <div class="name-movie">
+                            <div class="name-movie rp-1">
                                 <p>Paw</p>
                             </div>
                             <div class="btnAction">
@@ -123,9 +135,9 @@
                                 <p class="p-object">12+</p>
                             </div>
                         </div>
-                        <div class="col-4 item-movie position-relative" >
+                        <div class="col-4 item-movie rp-1 position-relative" >
                             <img src="./assets/img/poster/phim1990.jpg" class="poster-movie" alt="">
-                            <div class="name-movie">
+                            <div class="name-movie rp-1">
                                 <p>1990</p>
                             </div>
                             <div class="btnAction">
@@ -136,10 +148,10 @@
                                 <p class="p-object">12+</p>
                             </div>
                         </div>
-                        <div class="col-4 item-movie position-relative" >
+                        <div class="col-4 item-movie rp-1 position-relative" >
                             <img src="./assets/img/poster/vungdatthanky.jpg" class="poster-movie" alt="">
-                            <div class="name-movie">
-                                <p>Vung đất thần kỳ</p>
+                            <div class="name-movie rp-1">
+                                <p>Vùng đất thần kỳ</p>
                             </div>
                             <div class="btnAction">
                                 <button class="btnView btnAction-item" >Xem chi tiết</button>
@@ -158,10 +170,10 @@
                     <h3 class="heading-content active heading-news">TIN TỨC ĐIỆN ẢNH</h3>
                 </div>
                 <div class="list-news row">
-                    <div class="col-6 mb-5">
+                    <div class="col-6 mb-5 rp-1">
                         <div class="item-new row">
                             <div class="banner-news position-relative col-5">
-                                <a href=""><img src="./assets/img/news/1.jpg" class="img-banner-new"></a>
+                                <a href="" class="link-banner"><img src="./assets/img/news/1.jpg" class="img-banner-new"></a>
                                 <div class="block-hover"></div>
                             </div>
                             <div class="title-news col-7">
@@ -172,45 +184,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mb-5">
+                    <div class="col-6 mb-5 rp-1">
                         <div class="item-new row">
                             <div class="banner-news position-relative col-5">
-                                <a href=""><img src="./assets/img/news/2.jpg" class="img-banner-new"></a>
+                                <a href="" class="link-banner"><img src="./assets/img/news/2.jpg" class="img-banner-new"></a>
                                 <div class="block-hover"></div>
                             </div>
                             <div class="title-news col-7">
-                                <a href=""><h5 class="title-new">[Review] Encanto: Tình Cảm Gia Đình Chẳng Cần Đao To Búa Lớn!</h5></a>
-                                <div class="rate mb-1"><i class="fas fa-star text-warning"></i> <strong>8.8</strong>/10(110)</div>
-                                <div class="date-post mb-1"><i><i class="fas fa-calendar-alt"></i> 12/03/2020</i></div>
-                                <p class="content-new">Chẳng đao to búa lớn, chẳng dời non lấp bể, cách bạn trở thành người hùng để cứu lấy thứ gì đó</p>
+                                <a href="" class="link-banner"><h5 class="title-new">Top 10 Diễn Viên Được Đồn Đoán Sẽ Thay Thế Daniel Craig Vào Vai James Bond? (P.1)</h5></a>
+                                <div class="rate mb-1"><i class="fas fa-star text-warning"></i> <strong>8.7</strong>/10(110)</div>
+                                <div class="date-post mb-1"><i><i class="fas fa-calendar-alt"></i> 13/03/2020</i></div>
+                                <p class="content-new">Đã có rất nhiều cái tên được đề xuất, liệu người được chọn sẽ là một trong số họ chứ?</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mb-5">
+                    <div class="col-6 mb-5 rp-1">
                         <div class="item-new row">
                             <div class="banner-news position-relative col-5">
-                                <a href=""><img src="./assets/img/news/3.jpg" class="img-banner-new"></a>
+                                <a href="" class="link-banner"><img src="./assets/img/news/3.jpg" class="img-banner-new"></a>
                                 <div class="block-hover"></div>
                             </div>
                             <div class="title-news col-7">
-                                <a href=""><h5 class="title-new">[Review] Encanto: Tình Cảm Gia Đình Chẳng Cần Đao To Búa Lớn!</h5></a>
-                                <div class="rate mb-1"><i class="fas fa-star text-warning"></i> <strong>8.8</strong>/10(110)</div>
-                                <div class="date-post mb-1"><i><i class="fas fa-calendar-alt"></i> 12/03/2020</i></div>
-                                <p class="content-new">Chẳng đao to búa lớn, chẳng dời non lấp bể, cách bạn trở thành người hùng để cứu lấy thứ gì đó</p>
+                                <a href=""><h5 class="title-new">Phim MCU Nào Hay Nhất - P.12</h5></a>
+                                <div class="rate mb-1"><i class="fas fa-star text-warning"></i> <strong>9.2</strong>/10(110)</div>
+                                <div class="date-post mb-1"><i><i class="fas fa-calendar-alt"></i> 11/03/2020</i></div>
+                                <p class="content-new">The Avengers là đứa con ấn tượng nhất nhì Marvel Studios, chẳng có gì ngạc nhiên khi một số hãng phim khác đều ít nhiều muốn học hỏi.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mb-5">
+                    <div class="col-6 mb-5 rp-1">
                         <div class="item-new row">
                             <div class="banner-news position-relative col-5">
-                                <a href=""><img src="./assets/img/news/4.jpg" class="img-banner-new"></a>
+                                <a href="" class="link-banner"><img src="./assets/img/news/4.jpg" class="img-banner-new"></a>
                                 <div class="block-hover"></div>
                             </div>
                             <div class="title-news col-7">
-                                <a href=""><h5 class="title-new">[Review] Encanto: Tình Cảm Gia Đình Chẳng Cần Đao To Búa Lớn!</h5></a>
-                                <div class="rate mb-1"><i class="fas fa-star text-warning"></i> <strong>8.8</strong>/10(110)</div>
-                                <div class="date-post mb-1"><i><i class="fas fa-calendar-alt"></i> 12/03/2020</i></div>
-                                <p class="content-new">Chẳng đao to búa lớn, chẳng dời non lấp bể, cách bạn trở thành người hùng để cứu lấy thứ gì đó</p>
+                                <a href=""><h5 class="title-new">Spider-Man: No Way Home - Trailer Bản IMAX Tiết Lộ Thêm Nhiều Tình Tiết Hấp Dẫn</h5></a>
+                                <div class="rate mb-1"><i class="fas fa-star text-warning"></i> <strong>8.9</strong>/10(110)</div>
+                                <div class="date-post mb-1"><i><i class="fas fa-calendar-alt"></i> 10/03/2020</i></div>
+                                <p class="content-new">Mới đây nhất, teaser trailer Spider-Man: No Way Home nhiên bản IMAX đã được tung ra, bật mí thêm nhiều tình tiết dù nhỏ nhưng cũng đủ khiến các fan hâm mộ phải bàn luận sôi nổi.</p>
                             </div>
                         </div>
                     </div>
@@ -226,22 +238,22 @@
                 </div>
                 
                 <div class="list-event row">
-                    <div class="col-3 item-event position-relative">
+                    <div class="col-3 rp-1 item-event position-relative">
                         <img src="./assets/img/event/1.jpg" class="img-banner-event" alt="">
                         <div class="block-hover-event"></div>
                         <a class="linkViewEvent">CHI TIẾT</a>
                     </div>
-                    <div class="col-3 item-event position-relative">
+                    <div class="col-3 rp-1 item-event position-relative">
                         <img src="./assets/img/event/2.png" class="img-banner-event" alt="">
                         <div class="block-hover-event"></div>
                         <button class="linkViewEvent">CHI TIẾT</button>
                     </div>
-                    <div class="col-3 item-event position-relative">
+                    <div class="col-3 rp-1 item-event position-relative">
                         <img src="./assets/img/event/3.jpg" class="img-banner-event" alt="">
                         <div class="block-hover-event"></div>
                         <a class="linkViewEvent">CHI TIẾT</a>
                     </div>
-                    <div class="col-3 item-event position-relative">
+                    <div class="col-3 rp-1 item-event position-relative">
                         <img src="./assets/img/event/4.jpg" class="img-banner-event" alt="">
                         <div class="block-hover-event"></div>
                         <a class="linkViewEvent">CHI TIẾT</a>
@@ -253,7 +265,7 @@
         <div id="footer">
             <div class="container block-footer">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-3 rp-1">
                         <div class="header-footer">
                             <h4 class="heading-footer">GIỚI THIỆU</h4>
                         </div>
@@ -263,7 +275,7 @@
                             <a href="" class="link-footer"><i class="fas fa-angle-double-right"></i> THỎA THUẬN SỬ DỤNG</a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 rp-1">
                         <div class="header-footer">
                             <h4 class="heading-footer">TIN TỨC</h4>
                         </div>
@@ -273,7 +285,7 @@
                             <a href="" class="link-footer"><i class="fas fa-angle-double-right"></i> TIN TỨC PHIM</a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 rp-1">
                         <div class="header-footer">
                             <h4 class="heading-footer">HỖ TRỢ</h4>
                         </div>
@@ -283,7 +295,7 @@
                             <a href="" class="link-footer"><i class="fas fa-angle-double-right"></i> TUYỂN DỤNG</a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 rp-1">
                         <div class="header-footer">
                             <h4 class="heading-footer">KẾT NỐI</h4>
                         </div>
@@ -302,5 +314,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/configPlugin.js"></script>
+    <script src="./assets/js/responsive.js"></script>
 </body>
 </html>
